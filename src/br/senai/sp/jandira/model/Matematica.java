@@ -5,64 +5,74 @@ public class Matematica {
 	private int multiplicando;
 	private int multiplicador;
 	
-	private String extenso;
-	private int contador = 0;
-//	private String calculo;
+	// "i" (index)
 	
-	public void calcular() {
+	public String[] calcular() {
 		
-		while (contador <= multiplicador) {
-			extenso = multiplicando + " x " + contador + " = " + Math.multiplyExact(multiplicando, contador);
+		String[] tabuada = new String[multiplicador + 1];
+		
+		for (int i = 0; i <= multiplicador; i++) {
+			int resultado = Math.multiplyExact(multiplicando, i);
+			tabuada[i] = multiplicando + " x " + i + " = " + resultado;
 			
-			System.out.println(extenso);
-			
-			contador++;
 		}
+		
+		return tabuada;
+		
 	}
-
-	public void setMultiplicando(String multiplicando) {
-		this.multiplicando = Integer.parseInt(multiplicando);
+	
+	public void setMultiplicando(int multiplicando) {
+		this.multiplicando = multiplicando;
 	}
 	
 	public int getMultiplicando() {
-		return this.multiplicando;
+		return multiplicando;
 	}
-
-	public void setMultiplicador(String multiplicador) {
-		this.multiplicador = Integer.parseInt(multiplicador);
+	
+	public void setMultiplicador(int multiplicador) {
+		this.multiplicador = multiplicador;
 	}
 	
 	public int getMultiplicador() {
-		return this.multiplicador;
+		return multiplicador;
 	}
 	
-	public void setExtenso(String extenso) {
-		this.extenso = extenso;
-	}
-	public String getExtenso() {
-		return this.extenso;
-	}
-	
-	
-	
-//	System.out.println("CONSTRUA SUA TABUADA!!");
-//	System.out.println(" ");
+//	private String extenso;
+//	private int contador = 0;
+////	private String calculo;
 //	
-//	System.out.print("Qual o multiplicando? ");
-//	multiplicando = leitor.nextInt();
-//	System.out.print("Qual o máximo multiplicador? ");
-//	multiplicador = leitor.nextInt();
-//	System.out.println(" ");
-//	
-//	leitor.close();
-//	
-//	System.out.println("TABUADA DO " + multiplicando);
-//	System.out.println("----------------------");
-//	
-//	while (contador <= multiplicador) {
-//		System.out.println(multiplicando + " x " + contador + " = " + multiplicando * contador);
+//	public void calcular() {
 //		
-//		contador++;
+//		while (contador <= multiplicador) {
+//			extenso = multiplicando + " x " + contador + " = " + Math.multiplyExact(multiplicando, contador);
+//			
+//			System.out.println(extenso);
+//			
+//			contador++;
+//		}
+//	}
+//
+//	public void setMultiplicando(String multiplicando) {
+//		this.multiplicando = Integer.parseInt(multiplicando);
+//	}
+//	
+//	public int getMultiplicando() {
+//		return this.multiplicando;
+//	}
+//
+//	public void setMultiplicador(String multiplicador) {
+//		this.multiplicador = Integer.parseInt(multiplicador);
+//	}
+//	
+//	public int getMultiplicador() {
+//		return this.multiplicador;
+//	}
+//	
+//	public void setExtenso(String extenso) {
+//		this.extenso = extenso;
+//	}
+//	public String getExtenso() {
+//		return this.extenso;
 //	}
 	
 	

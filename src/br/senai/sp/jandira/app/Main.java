@@ -11,11 +11,22 @@ public class Main {
 		frame.criarFrame();
 		
 		
-		
-//		Matematica calculo = new Matematica();
-//		calculo.setMultiplicando("10");
-//		calculo.setMultiplicador("6");
+//		Matematica t = new Matematica();
 //		
+//		t.setMultiplicador(10);
+//		t.setMultiplicando(10);
+//		
+//
+//		
+//		String[] resultadoT = t.calcular();
+//		
+//		for (int i = 0; i < t.calcular().length; i++) {
+//			System.out.println(resultadoT[i]);
+//		}
+		
+//		t.setMultiplicando("10");
+//		t.setMultiplicador("6");
+		
 //		calculo.calcular();
 		
 //		System.out.println(matematica.calcular());
