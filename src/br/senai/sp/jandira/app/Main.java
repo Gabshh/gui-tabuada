@@ -11,26 +11,6 @@ public class Main {
 		frame.criarFrame();
 		
 		
-//		Matematica t = new Matematica();
-//		
-//		t.setMultiplicador(10);
-//		t.setMultiplicando(10);
-//		
-//
-//		
-//		String[] resultadoT = t.calcular();
-//		
-//		for (int i = 0; i < t.calcular().length; i++) {
-//			System.out.println(resultadoT[i]);
-//		}
-		
-//		t.setMultiplicando("10");
-//		t.setMultiplicador("6");
-		
-//		calculo.calcular();
-		
-//		System.out.println(matematica.calcular());
-//		System.out.println(matematica.mostrarTabuada());
 	}
 
 }

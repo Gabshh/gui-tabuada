@@ -32,7 +32,7 @@ public class Frame {
 		
 	JFrame frame = new JFrame();
 	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	frame.setSize(600, 600);
+	frame.setSize(500, 500);
 	frame.setTitle("Tabuada");
 	frame.setLayout(null);
 	
@@ -40,42 +40,32 @@ public class Frame {
 	
 	// Header do Frame
 	JPanel header = new JPanel();
-	header.setBounds(0, 0, 600, 50);
+	header.setBounds(0, 0, 600, 100);
 	header.setBackground(Color.WHITE);
 	header.setLayout(null);
 	 
 	JLabel lblTabuada = new JLabel("Tabuada");
 	lblTabuada.setForeground(Color.BLUE);
-	lblTabuada.setFont(new Font("Sans Serif", Font.BOLD, 20));
-	lblTabuada.setBounds(20, 10, 100, 30);
+	lblTabuada.setFont(new Font("Sans Serif", Font.BOLD, 25));
+	lblTabuada.setBounds(35, 30, 150, 30);
 	header.add(lblTabuada);
 	
-	// Comandos teste para imagem
+	JLabel lblCalculadora = new JLabel("");
+	lblCalculadora.setBounds(320, 0, 100, 100);
+	header.add(lblCalculadora);
 	
-//	BufferedImage image = ImageIO.read(new File(calculator.jpg));
-	
-//	 ImageIcon icon = new ImageIcon(calculator.jpg);
-	
-//	ImageIcon icon = new ImageIcon(calculator.png);
-	
-//	frame.add(new JLabel(new ImageIcon(br.senai.sp.jandira/images/calculator.png)));
-	
-//	JLabel wIcon = new JLabel(new ImageIcon(wPic));
+	ImageIcon imgCalculadora = new ImageIcon(getClass().getResource("../images/"
+			+ "calculator.png"));
+	lblCalculadora.setIcon(imgCalculadora);
 	
 	// PAINEL2
 	
 	JPanel panelFormulario = new JPanel();
-	panelFormulario.setBounds(20, 60, 250, 390);
+	panelFormulario.setBounds(20, 100, 250, 300);
 	panelFormulario.setBackground(null);
 	panelFormulario.setLayout(null);
 	
-	// PAINEL3
-	
-	JPanel panelFormulario2 = new JPanel();
-	panelFormulario2.setBounds(270, 60, 250, 390);
-	panelFormulario2.setBackground(Color.WHITE);
-	panelFormulario2.setLayout(null);
-	
+	// -------------------------------------------------------------------------
 	
 	JLabel lblMultiplicando = new JLabel();
 	lblMultiplicando.setText("Multiplicando: ");
@@ -115,13 +105,13 @@ public class Frame {
 	JLabel lblResultado = new JLabel("Resultado: ");
 	lblResultado.setForeground(Color.BLUE);
 	lblResultado.setFont(new Font("Sans Serif", Font.BOLD, 15));
-	lblResultado.setBounds(280, 110, 100, 30);
+	lblResultado.setBounds(280, 150, 100, 30);
 //	panelFormulario2.add(lblResultado);
 	
 	// JList:
 	
 	JScrollPane scroll = new JScrollPane();
-	scroll.setBounds(280, 150, 150, 210);
+	scroll.setBounds(280, 190, 160, 210);
 //	panelFormulario2.add(scroll);
 	
 	JList tabuadaList = new JList();
@@ -134,7 +124,6 @@ public class Frame {
 	frame.getContentPane().add(panelFormulario);
 	frame.getContentPane().add(lblResultado);
 	frame.getContentPane().add(scroll);
-//	frame.getContentPane().add(panelFormulario2);
 	frame.getContentPane().add(header);
 	
 	
